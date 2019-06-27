@@ -4,56 +4,56 @@ message = 'GUVF VF ZL FRPERG ZRFFNTR.'
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 # loop through every possible key
 
- 8. for key in range(len(LETTERS)):
+for key in range(len(LETTERS)):
 
- 9.
 
-10.     # It is important to set translated to the blank string so that the
 
-11.     # previous iteration's value for translated is cleared.
+     # It is important to set translated to the blank string so that the
 
-12.     translated = ''
+     # previous iteration's value for translated is cleared.
 
-13.
+     translated = ''
 
-14.     # The rest of the program is the same as the original Caesar program:
 
-15.
 
-16.     # run the encryption/decryption code on each symbol in the message
+     # The rest of the program is the same as the original Caesar program:
 
-17.     for symbol in message:
 
-18.         if symbol in LETTERS:
 
-19.             num = LETTERS.find(symbol) # get the number of the symbol
+     # run the encryption/decryption code on each symbol in the message
 
-20.             num = num - key
+     for symbol in message:
 
-21.
+         if symbol in LETTERS:
 
-22.             # handle the wrap-around if num is 26 or larger or less than 0
+             num = LETTERS.find(symbol) # get the number of the symbol
 
-23.             if num < 0:
+             num = num - key
 
-24.                 num = num + len(LETTERS)
 
-25.
 
-26.             # add number's symbol at the end of translated
+             # handle the wrap-around if num is 6 or larger or less than 0
 
-27.             translated = translated + LETTERS[num]
+             if num < 0:
 
-28.
+                 num = num + len(LETTERS)
 
-29.         else:
 
-30.             # just add the symbol without encrypting/decrypting
 
-31.             translated = translated + symbol
+             # add number's symbol at the end of translated
 
-32.
+             translated = translated + LETTERS[num]
 
-33.     # display the current key being tested, along with its decryption
 
-34.     print('Key #%s: %s' % (key, translated))
+
+         else:
+
+             # just add the symbol without encrypting/decrypting
+
+             translated = translated + symbol
+
+
+
+     # display the current key being tested, along with its decryption
+
+     print('Key #%s: %s' % (key, translated))

@@ -1,5 +1,4 @@
 #!/usr/bin/python
 
-f = open('o')
 for i in range(868589):
-    f.write('1')
+    print('1',end="")
