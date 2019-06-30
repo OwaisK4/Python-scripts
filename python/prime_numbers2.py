@@ -13,5 +13,5 @@ def printPrime(n):
         if isPrime(i):
             print(i, end=',')
 if __name__ == '__main__':
-    n = int(sys.argv[1])
+    n = int(100)
     printPrime(n)
