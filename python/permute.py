@@ -1,6 +1,6 @@
 #!/usr/bin/python2
+import os
 import sys
-
 def toString(List):
     return ''.join(List)
 # Function to print permutations of string
