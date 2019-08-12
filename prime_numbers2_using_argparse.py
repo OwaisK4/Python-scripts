@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import time as t
 # -*- coding: utf-8 -*-
 """
 Created on Tue Jul  2 09:27:25 2019
@@ -21,4 +22,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("range",help="The number of prime numbers between 2 and range",type=int)
     args = parser.parse_args()
+    start_time = int(t.time())
     print(printPrime(args.range))
+    print(int(t.time()) - start_time)
