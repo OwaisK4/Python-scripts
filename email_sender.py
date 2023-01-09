@@ -13,9 +13,9 @@ context = ssl.create_default_context()
 #Logging into google account and sending email
 try:
     server = smtplib.SMTP(smpt_server, port)
-    #server.ehlo()
+    server.ehlo()
     server.starttls(context=context)
-    #server.ehlo()
+    server.ehlo()
     server.login(sender_email, password)
     server.sendmail(sender_email, receiver_email, message)
 except Exception as e:
