@@ -26,4 +26,3 @@ def div(x):
         print("Invalid function")
 time.sleep(1)
 print(div(5))
-
