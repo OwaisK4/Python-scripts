@@ -1,4 +1,3 @@
-#!/usr/bin/python
 from time import sleep
 
 def countdown(n):
