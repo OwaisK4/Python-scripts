@@ -36,6 +36,6 @@ if __name__ == "__main__":
     numbers = sample(range(20), 10)
     s = Sorting(numbers)
     print(s.numbers)
-    # s.recursiveSort()
-    s.numbers = InsertionSort(s.numbers)
+    s.recursiveSort()
+    # s.numbers = InsertionSort(s.numbers)
     print(s.numbers)
